@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Opinión</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      padding: 20px;
+    }
+    h2 {
+      color: #b33e00;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+    }
+    input, select, textarea {
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #b33e00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cc4f1a;
+    }
+  </style>
+</head>
+<body>
+
+  <h2> Evalua nuestro contenido</h2>
+
+  <form action="#" method="post">
+    <label for="nombre">Nombre (opcional):</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="tema">Te gusto el tema</label>
+    <select id="tema" name="tema">
+      <option value="si">Si, me encanto</option>
+      <option value="masomenos">Estuvo bien</option>
+      <option value="no" selected>No me gusto</option>
+    </select>
+
+    <label for="contenido">Que fue lo que mas te gusto</label>
+    <textarea id="contenido" name="contenido" placeholder="Ejemplo: los chilaquiles rellenos, las recetas, las imagenes..."></textarea>
+
+    <label for="mejorar">Que podemos mejorar?</label>
+    <textarea id="mejorar" name="mejorar" placeholder="Escribe tus sugerencias aqui..."></textarea>
+
+    <label>
+      <input type="checkbox" name="contacto" value="si">
+      Quiero que me contacten para recibir mas recetas.
+    </label>
+
+    <button type="submit">Enviar opinion</button>
+    <p>
+      <label>
+      <input type="reset" name="Submit" value="borrar ">
+      </label>
+    </p>
+  </form>
+  <a href="2.html" target="_blank"><img src="imagenes/anterior.png" border="0"></a>
+</body>
+</html>
